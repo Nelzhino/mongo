@@ -1,0 +1,7 @@
+if(process.env.NODE_DEV !== "production"){
+    require('dotenv').config();
+}
+
+module.exports = {
+    MONGO_URI: process.env.MONGO_URI
+}
